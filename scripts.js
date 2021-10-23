@@ -1,1 +1,4 @@
-/* Add your JavaScript to this file */
+/*
+  JAVASCRIPT FOR INDEX.html
+  Maria McKenzie
+*/

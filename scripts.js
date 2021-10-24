@@ -7,19 +7,17 @@
 
 //LOAD THE DOCUMENT
 document.addEventListener("DOMContentLoaded", () => {
-  let email = document.getElementById("email").value;
-  let forms = document.getElementsByTagName("form");
-  let form = forms[0];
-  let btns = document.getElementsByClassName("btn");
-  let btn = btns[1];
+  let form = document.getElementsByTagName("form")[0];
+  let btn = document.getElementsByClassName("btn")[1];
 
-  //console.log(btn.value);
+  console.log(email);
   form.addEventListener("submit", function(e) {
     e.preventDefault();
-
-    //document.getElementsByClassName("message").innerHTML = "Thank you! Your email address "
-                                                        //    + email
-                                        //                    +" has been added to our mailing lists!";;
-    console.log(email);
+    //console.log(document.querySelector(".message").innerHTML = "Thank you!");
+    //console.log(document.querySelector("#email").value);
+    
+    document.querySelector(".message").innerHTML = "Thank you! Your email address "
+                                                    + document.querySelector("#email").value
+                                                    +" has been added to our mailing lists!";
   });
 });
